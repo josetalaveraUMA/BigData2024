@@ -83,31 +83,6 @@ public class Mundo {
     }
 
 
-    public void ordenaPorAltura() {
-        List<Pais> ordenadosPorAltura = new ArrayList<>(paises);
-        ordenadosPorAltura.sort(Comparator.comparingDouble(Pais::altura)); // Ordenar por altura
-        System.out.println("\nPaíses ordenados por altura (menor a mayor):");
-        for (Pais pais : ordenadosPorAltura) {
-            System.out.println(pais);
-        }
-    }
-    public void ordenaAlfabeticamente() {
-        List<Pais> ordenadosAlfabeticamente = new ArrayList<>(paises);
-        ordenadosAlfabeticamente.sort(Comparator.comparing(Pais::nombre)); // Ordenar alfabéticamente
-        System.out.println("\nPaíses ordenados alfabéticamente:");
-        for (Pais pais : ordenadosAlfabeticamente) {
-            System.out.println(pais);
-        }
-    }
-    public void ordenaPorContinenteYNombre() {
-        List<Pais> ordenadosPorContinente = new ArrayList<>(paises);
-        ordenadosPorContinente.sort(Comparator.comparing(Pais::continente).thenComparing(Pais::nombre)); // Ordenar por continente y nombre
-        System.out.println("\nPaíses ordenados por continente y, en igualdad, alfabéticamente:");
-        for (Pais pais : ordenadosPorContinente) {
-            System.out.println(pais);
-        }
-    }
-
 
 
 
